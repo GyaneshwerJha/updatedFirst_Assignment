@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            list-style: none;
+            margin-top: auto;
+            padding: 0;
+            padding-bottom: 50px;
+            width: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 10px;
+            transition: trasform 0.3s, width 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        li span {
+            position: absolute;
+            opacity: 0;
+            padding: 5px;
+            font-size: large;
+            white-space: nowrap;
+            transition: opacity 0.3s;
+            color: black;
+        }
+
+        li:hover span {
+            opacity: 1;
+        }
+
+        li:hover {
+            width: 80px;
+            transform: translateX(10px);
+            opacity: 0.9;
+        }
+
+        .sidenavbar {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hoverable Side Nav Buttons</h1>
+    <div class="container"> </div>
+    <div>
+        <nav class="sidenavbar">
+            <ul>
+                <li style="background-color: rgb(50, 231, 50);"><a href="index.html"><span>Home</span></a></li>
+                <li style="background-color: rgb(70, 173, 214);"><a href="index.html"><span>Java</span></a></li>
+                <li style="background-color: orange;"><a href="index.html"><span>CSS</span></a></li>
+                <li style="background-color: rgb(71, 74, 73);"><a href="index.html"><span>BootStrap</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

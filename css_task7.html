@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task12</title>
+    <style>
+        body {
+            background-color: rgb(164, 75, 115);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgb(134, 24, 73);
+            margin-top: 100px;
+            width: fit-content;
+            /* margin-left: 30%;
+            margin-right: 30%; */
+            /* border: 1px solid; */
+            padding: 10px;
+
+        }
+
+        input[type='text'],
+        input[type="password"],
+        input[type="number"],
+        textarea {
+            font-size: large;
+            display: flex;
+            width: 90%;
+            border-radius: 3px;
+            border-width: 0;
+            padding: 7px;
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        select {
+            border-radius: 3px;
+            padding: 7px;
+            width: 50%;
+        }
+
+        table {
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 50vw;
+            height: 60vh;
+
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border-width: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <!-- <caption>Registration Form</caption> -->
+            <table>
+                <tr>
+                    <td><label for="fn">Name:</label></td>
+                    <td><input type="text" name="fn"></td>
+                </tr>
+                <tr>
+                    <td><label for="un">Email:</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="ps">Password:</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="rps">Phone Number:</label></td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>Male<input type="radio" name="gender">
+                        Female<input type="radio" name="gender">
+                        Other<input type="radio" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Language</label>
+                    </td>
+                    <td><select name="language">
+                            <option value="options" selected>Select Language</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="zc">Zip-code</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="add">Address </label></td>
+                    <td><textarea></textarea></td>
+                </tr>
+            </table>
+            <tr>
+                <td><button type="submit"><b>Register</b></button></td>
+            </tr>
+        </div>
+    </form>
+</body>
+
+</html>
